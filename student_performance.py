@@ -4,9 +4,9 @@ student_grades = {
 }
 
 for module, grades in student_grades.items():
-    total = 10  # modified initialization value
+    total = 0
     for grade in grades:
-        if grade < 50:
+        if grade < 60:  # modified condition
             print(f"{module}: Student failed")
         else:
             total += grade
