@@ -10,6 +10,9 @@ for module, grades in student_grades.items():
             print(f"{module}: Student failed")
         else:
             total += grade
+if len(grades) == 0:
+    print(f"{module}: No grades available")
+    continue
 
     average = total / len(grades)
     print(f"{module} Average: {average}")
